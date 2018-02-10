@@ -5,3 +5,10 @@
 .container{
 	margin-top: 2%;
 }
+
+a.thumbnail:hover {
+    border-color: #337ab7;
+    background: #eee;
+    text-decoration: solid;
+    font-weight: bold;
+}

@@ -2,32 +2,13 @@
 	<div class="row">
 		<div class="col-md-12">
 			<div class="row">
-  				<div class="col-xs-6 col-md-3 text-center">
-   					 <a href="#" class="thumbnail">
-      					<h1>hola1</h1>
-    				</a>
-  				</div>
-  				<div class="col-xs-6 col-md-3 text-center">
-   					 <a href="#" class="thumbnail">
-      					<h1>hola2</h1>
-    				</a>
-  				</div>
-  				<div class="col-xs-6 col-md-3 text-center">
-   					 <a href="#" class="thumbnail text-center">
-      					<h1>hola3</h1>
-    				</a>
-  				</div>
-  				<div class="col-xs-6 col-md-3 text-center">
-   					 <a href="#" class="thumbnail">
-      					<h1>hola4</h1>
-    				</a>
-  				</div>
-  				<div class="col-xs-6 col-md-3 text-center">
-   					 <a href="#" class="thumbnail">
-      					<h1>hola5</h1>
-    				</a>
-  				</div>
-  
+  				 <ng-container *ngFor="let breed of breeds"> 
+               <div class="col-xs-6 col-md-4 text-center">
+                 <a routerLink="/breedsDetails/{{breed}}" class="thumbnail">
+                    <h1>{{breed}}</h1>
+                </a>
+              </div>
+          </ng-container> 
 			</div>
 		</div>		
 	</div>	
