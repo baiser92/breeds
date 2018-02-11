@@ -26,7 +26,7 @@ export class BreedsComponent implements OnInit{
               this.breeds.push(i)
             }
           }
-          return {"a":1, "b":3}
+          return {"a":1, "b":4}
        });  	 	
   }
 

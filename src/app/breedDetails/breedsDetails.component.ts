@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BreedsSevice } from './breeds.service';
+import { BreedsSevice } from '../breeds/breeds.service';
 import { Http, Headers } from '@angular/http';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from "rxjs/Observable";
@@ -8,7 +8,7 @@ import { ActivatedRoute} from '@angular/router'
 @Component({
   selector: 'app-detailsBreeds',
   templateUrl: './breedsDetails.component.html',
-  styleUrls: ['./breeds.component.css']
+  styleUrls: ['./breedsDetails.component.css']
 })
 export class BreedsDetailsComponent implements OnInit {
 	nameBreed: string; 

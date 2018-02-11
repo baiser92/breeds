@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import {Routes, RouterModule} from "@angular/router";
 import { AppComponent } from './app.component';
 import { BreedsComponent } from './breeds/breeds.component';
-import { BreedsDetailsComponent } from './breeds/breedsDetails.component';
+import { BreedsDetailsComponent } from './breedDetails/breedsDetails.component';
 import { BreedsSevice } from './breeds/breeds.service';
 
 
