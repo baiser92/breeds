@@ -1,10 +1,14 @@
 <app-carousel></app-carousel>
 <div class="container-fluid">
 	<div class="row">
+		<div class="col-md-12">
+			<app-loading></app-loading>
 	    <div class="col-sm-6 col-md-4" style="margin-top: 2%; text-align: -webkit-center;" *ngFor="let image of breadImages">
 	    <div class="thumbnail-img">
 	      <img class="second-slide" src="{{image}}" alt="100%x100" style="height: 164px; width: 290px; display: block;" data-holder-rendered="true">
 	    </div>
 	  </div>
+		</div>
+		
 	</div>
 </div>
