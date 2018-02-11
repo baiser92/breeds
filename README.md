@@ -1,28 +1,34 @@
 # DogsBreeds
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0.
+# DogsBreeds
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Prerequisites
 
-## Code scaffolding
+1)Tener instalado un nodejs
+2)Tener instalado angular-cli (npm install -g @angular/cli@1.3.0-rc.0) 
+3)Tener instalado git
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Installing
 
-## Build
+1) Clonar el proyecto desde el siguiente repositorio con el siguiente comando (git clone https://github.com/baiser92/breeds.git)
+2) Instalar las dependencia con npm install
+3) Ejecutar el comando ng serve una vez instalado las dependencia y esperar que webpack compile el proyecto
+4)Visualizar el proyecto en localhost:4000, igualmente al ejecutar el proyecto en la consola de node indica en que puerto esta corriendo.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+### Test
+1) Debe ejecutarse el comando "ng test" para probar las pruebas realizadas
+2)Una vez ejecutado el comando se abrirá el navegador indicando el resultado de las test realizados.
 
-## Running unit tests
+Nota: Para ver las pruebas se puede ubicar en cada componente y ver los archivos terminales "spec.ts", donde se muestran las pruebas realizadas
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Built With
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+* [Angular] - frameword front end, version 4 con Angular-cli
+* [npm] - Manejador de dependencias
 
-## Further help
+## Authors
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* **Baiser Roa**
