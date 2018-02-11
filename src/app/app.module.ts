@@ -18,10 +18,6 @@ const appRouter: Routes =[
   {path: '', component: BreedsComponent},
   {path: 'breeds', component: BreedsComponent},
   {path: 'breedsDetails/:name', component: BreedsDetailsComponent},
-
-  
- /* {path: 'lugares', component: LugaresComponent},
-  {path: 'detalle/:id', component: DetalleComponent}, */
 ];
 
 @NgModule({
