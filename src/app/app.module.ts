@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { BreedsComponent } from './breeds/breeds.component';
 import { BreedsDetailsComponent } from './breedDetails/breedsDetails.component';
 import { BreedsSevice } from './breeds/breeds.service';
+import { LoadingComponent } from './shared/loading/loading.component';
+import { CarouselComponent } from './shared/carousel/carousel.component';
 
 
 
@@ -24,7 +26,9 @@ const appRouter: Routes =[
   declarations: [
     AppComponent,
     BreedsComponent,
-    BreedsDetailsComponent
+    BreedsDetailsComponent,
+    LoadingComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
