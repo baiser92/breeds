@@ -5,6 +5,9 @@ import { Http, Headers, HttpModule } from '@angular/http';
 import {Location} from "@angular/common";
 import { RouterTestingModule } from '@angular/router/testing';
 import {Routes, RouterModule, Router} from "@angular/router";
+import { LoadingComponent } from '../shared/loading/loading.component';
+import { CarouselComponent } from '../shared/carousel/carousel.component';
+import { LoaderService } from '../shared/loading/loader.service';
 
 describe('BreedsComponent', () => {
    let location: Location;
@@ -13,7 +16,7 @@ describe('BreedsComponent', () => {
 
   beforeEach(()=>{
      TestBed.configureTestingModule({
-     declarations: [BreedsComponent],
+     declarations: [BreedsComponent, LoadingComponent, CarouselComponent ],
      imports: [ HttpModule, RouterTestingModule]
    });
   });
@@ -37,7 +40,8 @@ describe('BreedsComponent', () => {
     let fixture = TestBed.createComponent(BreedsComponent);
     let app = fixture.debugElement.componentInstance;
     let breedsSevice = fixture.debugElement.injector.get(BreedsSevice);
-    let result =
+    let result = BreedsSevice.getBreeds
+    console.log(result);
     expect(app.breeds).toEqual(breedsSevice.getBreeds);
   }); */
 

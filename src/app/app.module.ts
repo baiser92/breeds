@@ -1,7 +1,7 @@
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import {Routes, RouterModule} from "@angular/router";
 import { AppComponent } from './app.component';
 import { BreedsComponent } from './breeds/breeds.component';
@@ -9,6 +9,7 @@ import { BreedsDetailsComponent } from './breedDetails/breedsDetails.component';
 import { BreedsSevice } from './breeds/breeds.service';
 import { LoadingComponent } from './shared/loading/loading.component';
 import { CarouselComponent } from './shared/carousel/carousel.component';
+import { LoaderService } from './shared/loading/loader.service';
 
 
 
@@ -38,7 +39,10 @@ const appRouter: Routes =[
 
 
   ],
-  providers: [BreedsSevice],
-  bootstrap: [AppComponent]
+  providers: [BreedsSevice, LoaderService],
+  bootstrap: [AppComponent],
+  schemas: [
+        CUSTOM_ELEMENTS_SCHEMA
+    ]
 })
 export class AppModule { }

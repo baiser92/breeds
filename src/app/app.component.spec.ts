@@ -1,6 +1,8 @@
 import { TestBed, async ,fakeAsync, tick } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { BreedsComponent } from './breeds/breeds.component';
+import { LoadingComponent } from './shared/loading/loading.component';
+import { CarouselComponent } from './shared/carousel/carousel.component';
 import {Location} from "@angular/common";
 import { RouterTestingModule } from '@angular/router/testing';
 import {Router} from "@angular/router";
@@ -13,7 +15,9 @@ describe('AppComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        BreedsComponent
+        BreedsComponent,
+        CarouselComponent,
+        LoadingComponent
 
       ],
       imports: [
