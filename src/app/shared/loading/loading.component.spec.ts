@@ -11,18 +11,17 @@ describe('LoadingComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ LoadingComponent ],
-      imports: [ HttpModule, RouterTestingModule]
+      imports: [ HttpModule, RouterTestingModule],
+      providers: [LoaderService]
     })
     .compileComponents();
   }));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(LoadingComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+  it('Should create the app', () =>{
+      let fixture = TestBed.createComponent(LoadingComponent);
+      let app = fixture.debugElement.componentInstance;
+      expect(app).toBeTruthy();
+   }); 
 
-  it('should be created', () => {
-    expect(component).toBeTruthy();
-  });
+ 
 });

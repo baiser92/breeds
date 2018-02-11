@@ -13,8 +13,6 @@ import { LoaderService } from './shared/loading/loader.service';
 
 
 
-
-
 // Esto es paar crear las rutas siempre hay que importalos
 const appRouter: Routes =[
 
@@ -36,8 +34,6 @@ const appRouter: Routes =[
     RouterModule.forRoot(appRouter),
     HttpModule,
     HttpClientModule,
-
-
   ],
   providers: [BreedsSevice, LoaderService],
   bootstrap: [AppComponent],

@@ -28,6 +28,7 @@ export class BreedsComponent implements OnInit{
               this.breeds.push(i)
             }
           }
+          console.log(this.breeds);
           this.loaderService.display(false);
        });  	 	
   }
